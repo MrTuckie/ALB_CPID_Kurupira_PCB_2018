@@ -1,28 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device:R
+# DHT11_Temperature_Humidity
 #
-DEF Device:R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Kurupira-Arthur-rescue:DHT11_Temperature_Humidity
-#
-DEF Kurupira-Arthur-rescue:DHT11_Temperature_Humidity TH 0 0 N Y 1 F N
+DEF DHT11_Temperature_Humidity TH 0 0 N Y 1 F N
 F0 "TH" 0 1050 60 H V C CNN
-F1 "Kurupira-Arthur-rescue:DHT11_Temperature_Humidity" 0 950 60 H V C CNN
+F1 "DHT11_Temperature_Humidity" 0 950 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -54,11 +37,11 @@ X GND 3 100 0 200 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Kurupira-Arthur-rescue:FC-37
+# FC-37
 #
-DEF Kurupira-Arthur-rescue:FC-37 U 0 40 Y Y 1 F N
+DEF FC-37 U 0 40 Y Y 1 F N
 F0 "U" 0 -200 60 H V C CNN
-F1 "Kurupira-Arthur-rescue:FC-37" 0 350 60 H V C CNN
+F1 "FC-37" 0 350 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -68,11 +51,11 @@ X Sensor 2 450 100 200 L 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# Kurupira-Arthur-rescue:LED
+# LED
 #
-DEF Kurupira-Arthur-rescue:LED D 0 40 Y N 1 F N
+DEF LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Kurupira-Arthur-rescue:LED" 0 -100 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -89,11 +72,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Kurupira-Arthur-rescue:PIR_Motion_Sensor
+# PIR_Motion_Sensor
 #
-DEF Kurupira-Arthur-rescue:PIR_Motion_Sensor PIR 0 0 N Y 1 F N
+DEF PIR_Motion_Sensor PIR 0 0 N Y 1 F N
 F0 "PIR" 0 900 60 H V C CNN
-F1 "Kurupira-Arthur-rescue:PIR_Motion_Sensor" 0 800 60 H V C CNN
+F1 "PIR_Motion_Sensor" 0 800 60 H V C CNN
 F2 "" 0 800 60 H V C CNN
 F3 "" 0 800 60 H V C CNN
 DRAW
@@ -110,11 +93,11 @@ X VCC 3 100 0 150 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Kurupira-Arthur-rescue:Q_NPN_BCE
+# Q_NPN_BCE
 #
-DEF Kurupira-Arthur-rescue:Q_NPN_BCE Q 0 0 Y N 1 F N
+DEF Q_NPN_BCE Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Kurupira-Arthur-rescue:Q_NPN_BCE" 200 -50 50 H V L CNN
+F1 "Q_NPN_BCE" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -129,11 +112,11 @@ X E 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Kurupira-Arthur-rescue:R
+# R
 #
-DEF Kurupira-Arthur-rescue:R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Kurupira-Arthur-rescue:R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -147,11 +130,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Kurupira-Arthur-rescue:Raspberry_Pi_2_3
+# Raspberry_Pi_2_3
 #
-DEF Kurupira-Arthur-rescue:Raspberry_Pi_2_3 J 0 40 Y Y 1 F N
+DEF Raspberry_Pi_2_3 J 0 40 Y Y 1 F N
 F0 "J" 700 -1250 50 H V C CNN
-F1 "Kurupira-Arthur-rescue:Raspberry_Pi_2_3" -400 900 50 H V C CNN
+F1 "Raspberry_Pi_2_3" -400 900 50 H V C CNN
 F2 "Pin_Headers:Pin_Header_Straight_2x20" 1000 1250 50 H I C CNN
 F3 "" 50 -150 50 H I C CNN
 DRAW
@@ -199,11 +182,11 @@ X GND 9 -300 -1300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Kurupira-Arthur-rescue:YL-38
+# YL-38
 #
-DEF Kurupira-Arthur-rescue:YL-38 U 0 40 Y Y 1 F N
+DEF YL-38 U 0 40 Y Y 1 F N
 F0 "U" 0 -300 60 H V C CNN
-F1 "Kurupira-Arthur-rescue:YL-38" 0 400 60 H V C CNN
+F1 "YL-38" 0 400 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -214,50 +197,6 @@ X D0 3 450 0 200 L 50 50 1 1 O
 X A0 4 450 -100 200 L 50 50 1 1 O
 X Sensor 5 -450 200 200 R 50 50 1 1 U
 X Sensor 6 -450 100 200 R 50 50 1 1 U
-ENDDRAW
-ENDDEF
-#
-# power:+3.3V
-#
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:+5V
-#
-DEF power:+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:GND
-#
-DEF power:GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

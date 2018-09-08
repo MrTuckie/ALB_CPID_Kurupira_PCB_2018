@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Kurupira-Arthur-rescue)(type Legacy)(uri "${KIPRJMOD}/Kurupira Arthur-rescue.lib")(options "")(descr ""))
+)

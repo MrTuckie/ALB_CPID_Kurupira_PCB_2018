@@ -1,43 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:A6_GSM
-LIBS:misc
-LIBS:nodemcu
-LIBS:sensors (2)
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:yl-38
+EESchema Schematic File Version 4
 LIBS:Kurupira Arthur-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -52,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PIR_Motion_Sensor PIR?
+L Kurupira-Arthur-rescue:PIR_Motion_Sensor PIR?
 U 1 1 5AB500A8
 P 7300 1500
 F 0 "PIR?" H 7300 2400 60  0000 C CNN
@@ -63,7 +26,7 @@ F 3 "" H 7300 2300 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Raspberry_Pi_2_3 J?
+L Kurupira-Arthur-rescue:Raspberry_Pi_2_3 J?
 U 1 1 5AB5011B
 P 5300 3550
 F 0 "J?" H 6000 2300 50  0000 C CNN
@@ -74,7 +37,7 @@ F 3 "" H 5350 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DHT11_Temperature_Humidity TH?
+L Kurupira-Arthur-rescue:DHT11_Temperature_Humidity TH?
 U 1 1 5AB502A0
 P 10050 1900
 F 0 "TH?" H 10050 2950 60  0000 C CNN
@@ -85,7 +48,7 @@ F 3 "" H 10050 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_BCE Q?
+L Kurupira-Arthur-rescue:Q_NPN_BCE Q?
 U 1 1 5AB502D9
 P 8950 2900
 F 0 "Q?" H 9150 2950 50  0000 L CNN
@@ -96,7 +59,7 @@ F 3 "" H 8950 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L Kurupira-Arthur-rescue:R R?
 U 1 1 5AB50322
 P 9050 2350
 F 0 "R?" V 9130 2350 50  0000 C CNN
@@ -107,7 +70,7 @@ F 3 "" H 9050 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L Kurupira-Arthur-rescue:R R?
 U 1 1 5AB5035D
 P 8600 2900
 F 0 "R?" V 8680 2900 50  0000 C CNN
@@ -118,9 +81,9 @@ F 3 "" H 8600 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9050 2500 9050 2700
+	9050 2500 9050 2600
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5AD0AD1B
 P 9050 3250
 F 0 "#PWR?" H 9050 3000 50  0001 C CNN
@@ -139,7 +102,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 2000 9050 2200
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5AD0B1EA
 P 9050 2000
 F 0 "#PWR?" H 9050 1850 50  0001 C CNN
@@ -150,7 +113,7 @@ F 3 "" H 9050 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5AD0B2C6
 P 7200 1400
 F 0 "#PWR?" H 7200 1250 50  0001 C CNN
@@ -163,7 +126,7 @@ $EndComp
 Wire Wire Line
 	7200 1400 7200 1500
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5AD0B2F8
 P 7400 1400
 F 0 "#PWR?" H 7400 1150 50  0001 C CNN
@@ -178,7 +141,7 @@ Wire Wire Line
 Text GLabel 7300 1100 1    60   Output ~ 0
 PIR
 Wire Wire Line
-	7300 1100 7300 1500
+	7300 1100 7300 1150
 Text GLabel 9450 2600 2    60   Output ~ 0
 RPi5
 Wire Wire Line
@@ -191,14 +154,14 @@ Wire Wire Line
 Text GLabel 7900 1150 2    60   Output ~ 0
 RPi11
 Wire Wire Line
-	7900 1150 7300 1150
+	7900 1150 7450 1150
 Connection ~ 7300 1150
 Text GLabel 9950 2550 3    60   Output ~ 0
 RPi22
 Wire Wire Line
-	10050 1900 10050 2000
+	10050 1900 10050 1950
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5AD0BDB1
 P 10150 2300
 F 0 "#PWR?" H 10150 2050 50  0001 C CNN
@@ -213,7 +176,7 @@ Wire Wire Line
 Text Notes 4150 1250 0    60   ~ 0
 As labels GPIO2 e GPIO4 podem ser quaisquer GPIO da RSP.\nElas não podem ser apenas GPIO3.
 $Comp
-L YL-38 U?
+L Kurupira-Arthur-rescue:YL-38 U?
 U 1 1 5B7B1847
 P 8100 4300
 F 0 "U?" H 8100 4000 60  0000 C CNN
@@ -228,7 +191,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 4100 8550 4100
 $Comp
-L +5V #PWR?
+L power:+5V #PWR?
 U 1 1 5B7B1B97
 P 8650 3800
 F 0 "#PWR?" H 8650 3650 50  0001 C CNN
@@ -239,7 +202,7 @@ F 3 "" H 8650 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5B7B1BBE
 P 8650 4700
 F 0 "#PWR?" H 8650 4450 50  0001 C CNN
@@ -252,9 +215,9 @@ $EndComp
 Wire Wire Line
 	8550 4200 8650 4200
 Wire Wire Line
-	8650 4200 8650 4700
+	8650 4200 8650 4600
 $Comp
-L R R?
+L Kurupira-Arthur-rescue:R R?
 U 1 1 5B7B1C01
 P 9150 4150
 F 0 "R?" V 9230 4150 50  0000 C CNN
@@ -265,7 +228,7 @@ F 3 "" H 9150 4150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R?
+L Kurupira-Arthur-rescue:R R?
 U 1 1 5B7B1C61
 P 9150 4450
 F 0 "R?" V 9230 4450 50  0000 C CNN
@@ -276,7 +239,7 @@ F 3 "" H 9150 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R?
+L Kurupira-Arthur-rescue:R R?
 U 1 1 5B7B1CD8
 P 9150 4750
 F 0 "R?" V 9230 4750 50  0000 C CNN
@@ -312,7 +275,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 3050 4400 3050
 $Comp
-L FC-37 U?
+L Kurupira-Arthur-rescue:FC-37 U?
 U 1 1 5B7B2991
 P 7100 4300
 F 0 "U?" H 7100 4100 60  0000 C CNN
@@ -339,7 +302,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 3800 4100 3800
 $Comp
-L +5V #PWR?
+L power:+5V #PWR?
 U 1 1 5B7B2F4D
 P 10050 2000
 F 0 "#PWR?" H 10050 1850 50  0001 C CNN
@@ -350,7 +313,7 @@ F 3 "" H 10050 2000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R?
+L Kurupira-Arthur-rescue:R R?
 U 1 1 5B7B2F77
 P 9950 2050
 F 0 "R?" V 10030 2050 50  0000 C CNN
@@ -371,7 +334,7 @@ Connection ~ 9950 2200
 Wire Wire Line
 	9950 2200 9950 2550
 $Comp
-L LED D?
+L Kurupira-Arthur-rescue:LED D?
 U 1 1 5B7B3797
 P 7600 750
 F 0 "D?" H 7600 850 50  0000 C CNN
@@ -382,7 +345,7 @@ F 3 "" H 7600 750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R?
+L Kurupira-Arthur-rescue:R R?
 U 1 1 5B7B37F2
 P 7900 750
 F 0 "R?" V 7980 750 50  0000 C CNN
@@ -400,4 +363,27 @@ Wire Wire Line
 Wire Wire Line
 	8050 1500 7400 1500
 Connection ~ 7400 1500
+Wire Wire Line
+	9050 2600 9050 2700
+Wire Wire Line
+	7300 1150 7300 1500
+Wire Wire Line
+	8650 4600 8650 4700
+Wire Wire Line
+	10050 1950 10050 2000
+Wire Wire Line
+	7450 1150 7300 1150
+$Comp
+L Device:R R?
+U 1 1 5B93C45B
+P 2450 5600
+F 0 "R?" H 2520 5646 50  0000 L CNN
+F 1 "R" H 2520 5555 50  0000 L CNN
+F 2 "" V 2380 5600 50  0001 C CNN
+F 3 "~" H 2450 5600 50  0001 C CNN
+	1    2450 5600
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 5100 0    60   ~ 0
+TEXTO PARA TESTAR O GIT HUB\n
 $EndSCHEMATC
