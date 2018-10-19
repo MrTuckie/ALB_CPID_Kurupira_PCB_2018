@@ -1,0 +1,10 @@
+.title KiCad schematic
+.include "Kurupira 2-cache.lib"
+R1 Net-_Q1-Pad1_ PIR 10k
+R2 V_out +5V 1k
+Q1 Net-_Q1-Pad1_ GND V_out Q_NPN_BEC
+J2 NC_01 +5V NC_02 NC_03 V_out NC_04 NC_05 NC_06 GND NC_07 PIR NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 Conn_02x10_Odd_Even
+J1 PIR Conn_01x01_Female
+J3 +5V Conn_01x01_Female
+J4 GND Conn_01x01_Female
+.end
